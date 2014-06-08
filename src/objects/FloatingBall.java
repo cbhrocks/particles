@@ -17,11 +17,19 @@ public class FloatingBall extends Ball {
 		this.position.y += yDirection;
 	}
 	
-	public void ifHitTopBottomEdge(){
+	public Point getPos(){
+		return this.position;
+	}
+	
+	public void setPosition(Point pos){
+		this.position = pos;
+	}
+	
+	public void HitTopBottomEdge(){
 		yDirection = -yDirection;
 	}
 	
-	public void ifHitLeftRightEdge(){
+	public void HitLeftRightEdge(){
 		xDirection = -xDirection;
 	}
 	
